@@ -5,6 +5,7 @@
 ![omega serving a prediction with metrics and structured logs](docs/demo/omega.svg)
 
 [![CI](https://github.com/mgkvibez/project-omega/actions/workflows/ci.yml/badge.svg)](https://github.com/mgkvibez/project-omega/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/omega-vision.svg)](https://pypi.org/project/omega-vision/)
 [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](pyproject.toml)
 
@@ -29,6 +30,10 @@ Reproduce with `python -m omega.vision.train --meta models/tinycnn.meta.json` an
 ## What this is not
 
 This is a **tiny CNN trained on synthetic shapes**. The 100% validation accuracy is a statement about four synthetic shapes, not about real-world vision. There is no ImageNet result here, no pretrained weights, no GPU, and no accuracy claim I cannot reproduce in front of you. The reason the repo exists is the part around the model that demos usually skip: validation, readiness, metrics, logs, and honest load reporting.
+
+```bash
+pipx install omega-vision && omega --version
+```
 
 ## The API
 
