@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "classes": [
+      "circle",
+      "square",
+      "bar-horizontal",
+      "bar-vertical"
+    ],
+    "version": "tiny-cnn-0.1",
+    "val_accuracy": 1.0,
+    "size": 28,
+    "samples": 1200,
+    "epochs": 8,
+    "seed": 0,
+    "train_seconds": 2.32
+  },
+  "bench": {
+    "1": {
+      "runs": 40,
+      "batch_size": 1,
+      "mean_ms": 0.186,
+      "p50_ms": 0.179,
+      "p95_ms": 0.21,
+      "p99_ms": 0.255,
+      "throughput_images_per_s": 5366.1,
+      "source": "torch",
+      "model_version": "tiny-cnn-0.1"
+    },
+    "8": {
+      "runs": 25,
+      "batch_size": 8,
+      "mean_ms": 1.403,
+      "p50_ms": 1.388,
+      "p95_ms": 1.555,
+      "p99_ms": 1.744,
+      "throughput_images_per_s": 5700.0,
+      "source": "torch",
+      "model_version": "tiny-cnn-0.1"
+    },
+    "32": {
+      "runs": 25,
+      "batch_size": 32,
+      "mean_ms": 7.436,
+      "p50_ms": 7.606,
+      "p95_ms": 8.033,
+      "p99_ms": 8.588,
+      "throughput_images_per_s": 4303.3,
+      "source": "torch",
+      "model_version": "tiny-cnn-0.1"
+    }
+  },
+  "measured_on": "CPU, torch 2.15.0+cpu, python 3.11, this sandbox"
+}
